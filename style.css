@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+#sideBar {
+	width: 60px;
+	height: calc(100vh - 60px);
+	background-color: #ccc;
+	position: fixed;
+	top: 60px;
+	left: 0;
+}
+#forehead {
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #3f48cc;
+	display: flex;
+}
+.svgIcon {
+	height: 50px;
+	width: 50px;
+	padding: 5px;
+}
+.sideIcon {
+	fill: #eee;
+	border-radius: 15px;
+	padding: 0;
+}
+.foreText {
+	height: 50px;
+	width: auto;
+	line-height: 50px;
+	padding: 5px;
+	font-family: 'Roboto',sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+.navButton {
+	width: auto;
+	height: 60px;
+	padding: 5px 10px;
+	margin: 0  5px;
+	background-color: #3f48cc;
+	border: none;
+	border-radius: 15px;
+}
+.navButton:hover {
+	background-color: #2f38bc;
+	cursor: pointer;
+}
+.navButton svg {
+	display: inline-block;
+    vertical-align: middle;
+}
+.navButton span {
+	display: inline-block;
+    width: auto;
+    vertical-align: middle;
+	font-family: 'Roboto',sans-serif;
+	color: #eee;
+	font-size: 36px;
+	font-weight: bold;
+}
+#botNav {
+	height: 62px;
+	border-top: 2px solid #888;
+	background-color: #ccc;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	display: none;
+}
+.botNavButton {
+	width: calc(100% / 3);
+	height: 60px;
+	border: none;
+	border-radius: 15px;
+	background-color: #ccc;
+}
+.botNavButton:hover {
+	background-color: #bbb;
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+.botNavButton > svg {
+	height: 54px;
+	width: 54px;
+	margin: 3px;
+	fill: #333;
+}
+.elemCont {
+	height: 60px;
+	width: auto;
+	display: flex;
+}
+@media only screen and (max-width: 1000px) {
+	.navButton span {
+		display: none;
+	}
+}
+@media (orientation: portrait) {
+	.navButton {
+		display: none;
+	}
+	#botNav {
+		display: flex;
+	}
+	.elemCont {
+		margin: auto;
+	}
+}

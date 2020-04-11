@@ -1,4 +1,3 @@
-var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-if (isAndroid) {
-    alert('Keyboard');
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	alert('Mobile');
 }

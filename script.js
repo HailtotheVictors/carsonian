@@ -2,3 +2,4 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	alert('Mobile');
 }
 //update
+//michigan
